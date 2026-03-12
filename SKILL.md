@@ -174,6 +174,31 @@ web_search "site:glassdoor.com [Company] reviews"
 - **gog**: Email outreach via Gmail
 - **nano-pdf**: CV editing and customization
 
+## Browser Tool Usage
+
+ALWAYS use the `browser` tool with these exact commands:
+
+### Correct Syntax
+- Open a URL:        `openclaw browser open <url>`
+- Take screenshot:   `openclaw browser screenshot`
+- Get page content:  `openclaw browser snapshot`
+- List tabs:         `openclaw browser tabs`
+- Focus a tab:       `openclaw browser focus <targetId>`
+- Close a tab:       `openclaw browser close <targetId>`
+- Navigate:          `openclaw browser navigate <url>`
+- Click element:     `openclaw browser click <ref>`
+
+### NEVER use:
+- `callauto1` — this tool does NOT exist
+- `action` parameter — not needed, use subcommands directly
+- Any tool name other than `browser`
+
+### LinkedIn Research Example
+```bash
+openclaw browser open https://linkedin.com/company/[company]
+openclaw browser screenshot
+openclaw browser snapshot
+```
 ## Success Metrics
 
 Track per application:
